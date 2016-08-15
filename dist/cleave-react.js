@@ -177,7 +177,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // Cleave.AsYouTypeFormatter should be provided by
 	        // external google closure lib
 	        try {
-	            pps.phoneFormatter = new PhoneFormatter(new window.Cleave.AsYouTypeFormatter(pps.phoneRegionCode), pps.delimiter);
+	            pps.phoneFormatter = new PhoneFormatter(new Cleave.AsYouTypeFormatter(pps.phoneRegionCode), pps.delimiter);
 	        } catch (ex) {
 	            throw new Error('Please include phone-type-formatter.{country}.js lib');
 	        }
@@ -334,7 +334,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	});
 
-	module.exports = window.Cleave = Cleave;
+	module.exports = Cleave;
 
 /***/ },
 /* 1 */
